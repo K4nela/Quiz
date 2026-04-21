@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#button-init{
+    display: inline-block;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#button-init:hover{
+    transform: scale(1.3);
+}
+
+#button-init:active{
+    background-color: black;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.answer{
+    display: block;
+}
