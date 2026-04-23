@@ -5,20 +5,16 @@
 //Aqui vocês fiquem a vontade para modificar, não concordei tanto com essa ideia do chat nn... mas faz sentido
 
 export class Pergunta {
-    constructor(pergunta, opcoes) {
+    constructor(pergunta, ...opcoes) {
         this.pergunta = pergunta;
         this.opcao = opcoes;
     }
 }
 
-export let perguntas = []
-
 export class Opcoes {
 
-    constructor(texto, peso1, peso2, peso3) {
+    constructor(texto, peso) {
         this.texto = texto;
-        this.peso1 = peso1;
-        this.peso2 = peso2;
-        this.peso3 = peso3;
+        this.peso = peso;
     }
 }

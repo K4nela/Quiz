@@ -1,4 +1,4 @@
-// Aqui adicionamos a lógica do quiz. Adicionaremos o processo de perguntas e respostas, modificando a div de respostas
+// Aqui adicionamos a lógica do quiz. Adicionaremos o processo de perguntasModel e respostas, modificando a div de respostas
 // Como cada resposta tem um valor diferente independente de já ser predefinido; Vamos utilizar o appendChild para criar
 // novas respostas atribuindo elas a uma nova pergunta
 
@@ -7,7 +7,7 @@ const respostas = document.querySelector("#answer");
 let contador = 0;
 
 export function mostrarPergunta() {
-    pergunta.textContent = perguntas[contador].pergunta;
+    pergunta.textContent = perguntasModel[contador].pergunta;
 }
 
 const selecionar = (resposta) => {
@@ -18,6 +18,6 @@ const selecionar = (resposta) => {
 }
 
 function mostrarPergunta() {
-    pergunta.textContent = perguntas[contador].pergunta;
+    pergunta.textContent = perguntasModel[contador].pergunta;
 }
 

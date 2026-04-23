@@ -1,4 +1,5 @@
 body{
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +35,8 @@ footer{
 }
 
 #button-init:hover{
-    transform: scale(1.3);
+    transition-delay: 12ms;
+    transform: scale(1.1);
 }
 
 #button-init:active{
@@ -48,4 +50,19 @@ footer{
 
 .answer{
     display: block;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.answer:hover{
+    transition-delay: 12ms;
+    transform: scale(1.1);
+}
+
+.answer:active{
+    background-color: black;
+    color: white;
 }

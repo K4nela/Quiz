@@ -12,19 +12,23 @@
 
 <section class = "corpo">
     <header>
-        <h1>Quiz</h1>
+        <h1>Naruto Quiz</h1>
     </header>
 
     <!--Tela Inicial-->
     <section class="page" id="page-home">
-        <h2 id="description-quiz">[Descrição do Quiz]</h2>
+        <h2 id="description-quiz">Descubra qual integrante do time 7 você é!</h2>
         <button id="button-init">Iniciar</button>
     </section>
 
     <!--Tela de Quiz-->
     <section class="hidden" id="page-quiz">
         <h2 id="question">[Pergunta]</h2>
-        <div class="answer">[Respostas]</div>
+        <div>
+            <p  class="answer">[Opção1]</p>
+            <p  class="answer">[Opção2]</p>
+            <p  class="answer">[Opção3]</p>
+        </div>
     </section>
 
     <!--Tela de Resultado-->
@@ -40,5 +44,6 @@
 </section>
 
 <script type="module" src="main.js"></script>
+<script type="module" src="src/view/paginaQuizView.js"></script>
 </body>
 </html>
