@@ -1,9 +1,10 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    min-height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
+    align-items: center;
+
 
     background-image: url("https://i.pinimg.com/736x/b1/71/ec/b171ec6c19523d1ee836cd2900af5893.jpg");
     background-size: cover;
@@ -11,30 +12,34 @@ body{
     background-repeat: no-repeat;
 }
 
+html, body{
+    height: 100%;
+}
+
 footer{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    bottom: 10px;
+    bottom: 2px;
+    margin-top: auto;
 }
 
 .corpo{
-    max-width: 900px;       
-    width: 90%;             
-    min-height: 500px;      
-    margin: 80px auto;           
-    padding: 40px 20px;      
+    width: 800px;
+    height: 700px;
+    margin: 80px auto;
+    padding: 40px 20px;
     background-color: #ffffff;
-    border-radius: 20px;     
+    border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
+
 }
 
 .button{
@@ -63,6 +68,15 @@ footer{
     display: none;
 }
 
+.imagem{
+    width: 70vw;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
 .answer{
     display: block;
     border-radius: 5px;
@@ -70,6 +84,10 @@ footer{
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+
+*{
+    outline: none;
 }
 
 .answer:hover{
@@ -82,39 +100,20 @@ footer{
     color: white;
 }
 
-.imagem{
-    width: 70vw;
-    max-width: 300px;
-    height: auto;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    border: 2px solid black;
-}
+/*.corpo{*/
+/*    width: 90%;*/
+/*    max-width: 600px;*/
+/*    !*min-height: 500px;*!*/
 
-@media (max-width: 600px) {
+/*    background-color: #fff;*/
+/*    border-radius: 20px;*/
+/*    box-shadow: 0 10px 30px rgba(0,0,0,0.1);*/
 
-    .button{
-        width: 100%;
-        font-size: 18px;
-    }
+/*    display: flex;*/
+/*    flex-direction: column;*/
 
-    .answer{
-        font-size: 18px;
-        padding: 12px;
-    }
+/*    padding: 30px;*/
+/*    text-align: center;*/
+/*}*/
 
-    footer{
-        position: static;
-        margin-top: 20px;
-    }
-}
 
-.corpo{
-    width: 90%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
