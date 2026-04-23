@@ -1,12 +1,6 @@
 import {criarPergunta} from "../controller/perguntasController.js";
 import {criarOpcoes} from "../controller/perguntasController.js";
 
-// criarPergunta("Em um problema difícil, você tende a:",
-//     criarOpcoes("Agir na coragem e improvisar", 1),
-//     criarOpcoes("Analisar sozinho antes de agir", 2),
-//     criarOpcoes("Buscar ajudar todos envolvidos", 3)
-// )
-
 export let listaDePerguntas = [];
 
 listaDePerguntas.push(
