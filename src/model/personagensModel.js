@@ -3,8 +3,8 @@
 
 export class Personagem {
 
-    constructor (nome, description, img, numValue){
-        this.name = nome;
+    constructor (name, description, img, numValue){
+        this.name = name;
         this.description = description;
         this.img = img;
         this.numValue = numValue;

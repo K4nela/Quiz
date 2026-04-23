@@ -22,7 +22,7 @@ footer{
     text-align: center;
 }
 
-#button-init{
+.button{
     width: 150px;
     display: inline-block;
     background-color: white;
@@ -34,12 +34,12 @@ footer{
     font-size: 20px;
 }
 
-#button-init:hover{
+.button:hover{
     transition-delay: 12ms;
     transform: scale(1.1);
 }
 
-#button-init:active{
+.button:active{
     background-color: black;
     color: white;
 }
@@ -65,4 +65,11 @@ footer{
 .answer:active{
     background-color: black;
     color: white;
+}
+
+.imagem{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid black;
 }

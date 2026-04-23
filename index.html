@@ -18,7 +18,7 @@
     <!--Tela Inicial-->
     <section class="page" id="page-home">
         <h2 id="description-quiz">Descubra qual integrante do time 7 você é!</h2>
-        <button id="button-init">Iniciar</button>
+        <button class="button" id="button-init">Iniciar</button>
     </section>
 
     <!--Tela de Quiz-->
@@ -33,9 +33,10 @@
 
     <!--Tela de Resultado-->
     <section class="hidden" id="page-results">
-        <img src="" alt="img-character">
+        <img src="" alt="img-character" id="imagem" class="imagem">
         <h2 id="name-character">[Nome do Personagem]</h2>
         <p id="description-character">[Descrição do Personagem]</p>
+        <button class="button" id="button-reset">Voltar</button>
     </section>
 
     <footer>
@@ -44,6 +45,5 @@
 </section>
 
 <script type="module" src="main.js"></script>
-<script type="module" src="src/view/paginaQuizView.js"></script>
 </body>
 </html>
