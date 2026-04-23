@@ -4,6 +4,11 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
+
+    background-image: url("https://i.pinimg.com/736x/b1/71/ec/b171ec6c19523d1ee836cd2900af5893.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer{
@@ -15,6 +20,15 @@ footer{
 }
 
 .corpo{
+    max-width: 900px;       
+    width: 90%;             
+    min-height: 500px;      
+    margin: 80px auto;           
+    padding: 40px 20px;      
+    background-color: #ffffff;
+    border-radius: 20px;     
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
