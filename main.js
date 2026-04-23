@@ -1,4 +1,6 @@
 import {mostrarTelaView} from "./src/view/mostrarTelaView.js"
+import { carregarPergunta, fluxoDePerguntas } from "./src/view/paginaQuizView.js";
+let indiceAtual = 0;
 
 mostrarTelaView("#page-home");
 
@@ -6,9 +8,7 @@ mostrarTelaView("#page-home");
 document.querySelector("#button-init").addEventListener("click", () => {
     mostrarTelaView("#page-quiz");
 
-    // document.querySelector("#question").innerHTML = `${listaDePerguntas[0].pergunta}`
-    // document.querySelector("#option1").innerHTML = `${listaDePerguntas[0].opcao[0].texto}`
-    // document.querySelector("#option2").innerHTML = `${listaDePerguntas[0].opcao[1].texto}`
-    // document.querySelector("#option3").innerHTML = `${listaDePerguntas[0].opcao[2].texto}`
+    indiceAtual = 0; // reset
+    carregarPergunta(indiceAtual);
+    fluxoDePerguntas(); // chama só uma vez
 });
-
