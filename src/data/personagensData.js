@@ -21,5 +21,3 @@ listaDePersonagens.push(
         30
     )
 );
-
-// console.log(listaDePersonagens)
