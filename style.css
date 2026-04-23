@@ -22,6 +22,7 @@ footer{
 }
 
 #button-init{
+    width: 150px;
     display: inline-block;
     background-color: white;
     margin: 20px;
@@ -29,6 +30,7 @@ footer{
     border-radius: 5px;
     border: 1px solid black;
     cursor: pointer;
+    font-size: 20px;
 }
 
 #button-init:hover{
