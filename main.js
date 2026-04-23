@@ -3,7 +3,6 @@ import {carregarPergunta, fluxoDePerguntas, pontuacaoTotal} from "./src/view/pag
 
 mostrarTelaView("#page-home");
 
-//navega para a página de quiz
 document.querySelector("#button-init").addEventListener("click", () => {
     mostrarTelaView("#page-quiz");
     carregarPergunta(0);
