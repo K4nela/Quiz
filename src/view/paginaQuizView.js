@@ -2,11 +2,9 @@ import {listaDePerguntas} from "../data/perguntasData.js";
 import {mostrarTelaView} from "./mostrarTelaView.js";
 import {resultado} from "./paginaResultsView.js";
 
-// const opcoes = document.querySelectorAll(".answer");
 export let pontuacaoTotal = 0;
 export let indiceAtual = 0;
 
-//carrega a pergunta de acordo com os índices
 export function carregarPergunta(indice) {
     document.querySelector("#question").innerHTML = (indice + 1) + " - " +  listaDePerguntas[indice].pergunta;
 
@@ -42,6 +40,3 @@ export function resetQuiz(){
     carregarPergunta(0);
     mostrarTelaView("#page-home");
 }
-
-//console.log(carregarPergunta(3))
-
