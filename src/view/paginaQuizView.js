@@ -28,6 +28,7 @@ export const fluxoDePerguntas = (proximaPagina) => {
                 carregarPergunta(indiceAtual);
 
             } else {
+                document.querySelector("#soma").innerHTML = pontuacaoTotal;
                 resultado(pontuacaoTotal);
                 mostrarTelaView(proximaPagina);
             }
